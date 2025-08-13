@@ -7,14 +7,18 @@
  * @param {number} target 
  * @return {number[]}
  */
-let twoSum = (number, target) => {
+
+let twoSum = (nums, target) => {
+    // ToDo: loop through array of numbers that add up to the sum of the target
     for (let i = 0; i < nums.length; i++) {
-        number = nums[i]        
-    
-        if (nums + nums === target) { 
-            return nums 
-        }
+        for (let j = 0; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) { 
+                return [i, j] 
+                console.log(nums)
+            }
+        }      
     }
+    return [] 
 }
 
-twoSum()
+console.log(twoSum([2,7,11,15], 9)) 
