@@ -23,7 +23,7 @@ const titleCase = (str) => {
         word[i] = word[i][0].toUpperCase() + word[i].substr(1)
         // console.log(word)
     }
-    word.join(' ')
+    return word.join(' ')
 }
 
  console.log(titleCase("I'm a little tea pot"))
