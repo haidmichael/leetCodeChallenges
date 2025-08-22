@@ -17,13 +17,16 @@
 */
 
 const titleCase = (str) => {
-    let word = str.toLowerCase().split(' ')
-    // console.log(word)
-    for (let i = 0; i < word.length; i++) {
-        word[i] = word[i][0].toUpperCase() + word[i].substr(1)
-        // console.log(word)
-    }
-    return word.join(' ')
+    // let word = str.toLowerCase().split(' ')
+    // // console.log(word)
+    // for (let i = 0; i < word.length; i++) {
+    //     word[i] = word[i][0].toUpperCase() + word[i].substr(1)
+    //     // console.log(word)
+    // }
+
+    // return str.toLowerCase().split(' ').map(word => word[0].toUpperCase() + word.substr(1)).join(' ')
+    return str.split(' ').map(word => word[0].toUpperCase() + word.substr(1).toLowerCase()).join(' ')
+    // return word.join(' ')
 }
 
  console.log(titleCase("I'm a little tea pot"))
