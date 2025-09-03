@@ -18,12 +18,14 @@
 
 //  * @param {character[]} s
 //  * @return {void} Do not return anything, modify s in-place instead.
-
+const hello = ["h","e","l","l","o"]
+const hannah = ["h","a","n","n","a","H"]
 function reverseString(s){
     // ***** 1st answer and it passed both cases *****
     // return s.reverse()
 
-    // ***** 2nd answer it works but doesn't pass leet code test. I think cust it returns a string not array. Will try to do it that returns to an array. 
+    // ***** 2nd answer it works but doesn't pass leet code test. 
+    // I think it returns a string not array. Will try to do it that returns to an array. ******
     let backwords = ''
     for (let i = s.length - 1; i >= 0; i--){
         // console.log(s[i].split(' '))
@@ -33,8 +35,8 @@ function reverseString(s){
     return backwords.split('')
 }
 
-console.log(reverseString(["h","e","l","l","o"]))
-console.log(reverseString(["h","a","n","n","a","H"]))
+console.log(reverseString(hello))
+console.log(reverseString(hannah))
 
 // reverseString(["h","e","l","l","o"])
 // reverseString(["h","a","n","n","a","H"])
