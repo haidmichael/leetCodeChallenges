@@ -8,14 +8,10 @@ const allUpper = 'HERE IS MY HANDLE HERE IS MY SPOUT'
 
 const titleCase = (str) => {
     // Create a variable to hold the string and covert it to lower case
-    let lowerToUpper = str.toLowerCase().split(' ')
-    // console.log(lowerToUpper)
+
     // Loop through the variable in order to return the first letter as upper case and add it to the string using slice()
-    for (let i = 0; i < lowerToUpper.length; i++) {
-        lowerToUpper[i] = lowerToUpper[i][0].toUpperCase() + lowerToUpper[i].slice(1)
-    }
+
     // return the joined string
-    return lowerToUpper.join(' ')
 }
 
 console.log(titleCase(teaPot))
